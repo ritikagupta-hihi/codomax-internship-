@@ -168,3 +168,40 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 24px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 40px 24px;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  .skills-list li {
+    font-size: 13px;
+  }
+}
