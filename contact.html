@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Ritika Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">RG</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Have a project in mind or just want to connect? Reach out below.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+      <span class="error-message" id="formError"></span>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com/ritikagupta-hihi/codomax-internship-.git" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Ritika Gupta. Built during the Codomax Web Development Internship.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
