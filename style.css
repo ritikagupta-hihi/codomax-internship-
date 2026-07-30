@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #1e1e2f;
@@ -45,6 +49,23 @@ a {
 .nav-links a {
   color: #fff;
   font-weight: 500;
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 /* ---------- Sections ---------- */
@@ -147,6 +168,11 @@ section h2 {
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
 }
 
 .btn-primary:hover {
@@ -247,7 +273,7 @@ footer {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s ease;
 }
 
 .back-to-top.visible {
@@ -262,6 +288,12 @@ footer {
   padding: 20px;
   border-radius: 8px;
   border-top: 4px solid #4f46e5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
