@@ -337,3 +337,22 @@ footer {
 .social-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 26px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 16px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
