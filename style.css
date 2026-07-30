@@ -254,3 +254,17 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+
+
+
+.project-card {
+  background-color: #f8f9fc;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 4px solid #4f46e5;
+}
+
+.project-card h3 {
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
