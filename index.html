@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+    
+
   <title>Ritika Gupta - Web Developer</title>
 </head>
 
@@ -14,12 +16,15 @@
   <header>
     <nav class="navbar">
       <a href="#hero" class="logo">RG</a>
-      <ul class="nav-links">
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
+
       </ul>
     </nav>
   </header>
@@ -84,6 +89,11 @@
     <p>&copy; 2026 Ritika Gupta. Built during the Codomax Web Development Internship.</p>
   </footer>
 
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+
 </body>
+
 
 </html>
