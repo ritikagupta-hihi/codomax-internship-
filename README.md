@@ -47,7 +47,7 @@ Just open `index.html` in your browser - no build step or server required.
 
 ## Live Site
 
-https://github.com/ritikagupta-hihi/codomax-internship-
+https://codomax-internship.vercel.app/
 
 ## Author
 
